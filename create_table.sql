@@ -60,6 +60,7 @@ PRIMARY KEY(c_w_id, c_d_id, c_id) ) Engine=InnoDB;
 drop table if exists history;
 
 create table history (
+h_row_id int auto_increment primary key,
 h_c_id int, 
 h_c_d_id tinyint, 
 h_c_w_id smallint,
